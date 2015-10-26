@@ -1,0 +1,6 @@
+framework module ImagePreview {
+  umbrella header "ImagePreview-umbrella.h"
+
+  export *
+  module * { export * }
+}

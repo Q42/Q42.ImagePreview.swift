@@ -1,0 +1,26 @@
+{
+  "name": "ImagePreview",
+  "version": "0.1.0",
+  "summary": "A short description of ImagePreview.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/ImagePreview",
+  "license": "MIT",
+  "authors": {
+    "Tim van Steenis": "tims@q42.nl"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/ImagePreview.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "default_subspecs": "Core",
+  "subspecs": [
+    {
+      "name": "Core",
+      "source_files": "src/ImagePreview"
+    }
+  ]
+}
