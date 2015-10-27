@@ -22,7 +22,8 @@ class ImagePreviewService {
   
   func imageFromBody(base64body: String) -> UIImage? {
     return NSData(base64EncodedString: base64body, options: [])
-      .flatMap { UIImage(header: header, body: $0) }
+      .flatMap { UIImage(header: header, body: $0)?.blurredImageWithRadius(0.4, tintColor: nil, saturationDeltaFactor: 1) }
+    
   }
   
 }

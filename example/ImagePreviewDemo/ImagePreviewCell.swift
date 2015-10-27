@@ -31,9 +31,8 @@ class ImagePreviewCell : UICollectionViewCell {
 //      activityIndicatorView.startAnimating()
       
       // set the preview image
-      imageView.image = ImagePreviewService.sharedInstance.imageFromBody(viewModel.preview)?
-        .applyBlurWithRadius(0.4, tintColor: nil, saturationDeltaFactor: 1)
-
+      imageView.image = ImagePreviewService.sharedInstance.imageFromBody(viewModel.preview)
+      
       // load the actual image from url (1 sec delay)      
       let seconds = 0.5
       let when = dispatch_time(DISPATCH_TIME_NOW, Int64(seconds * Double(NSEC_PER_SEC)))
