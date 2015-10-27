@@ -1,8 +1,6 @@
 PODS:
   - Alamofire (2.0.2)
-  - ImagePreview (0.1.0):
-    - ImagePreview/Core (= 0.1.0)
-  - ImagePreview/Core (0.1.0)
+  - ImagePreview (0.1.0)
 
 DEPENDENCIES:
   - Alamofire (~> 2.0)
@@ -14,6 +12,6 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Alamofire: 8edbab00802a752bb5240cc2abe70e7e881488ad
-  ImagePreview: ec2913faaab677b3357ab8974b8f3bcb95a988be
+  ImagePreview: f938d249133af154ed7b316a337ea2a9203c0e54
 
 COCOAPODS: 0.39.0
