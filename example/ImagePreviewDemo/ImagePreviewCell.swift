@@ -18,7 +18,6 @@ class ImagePreviewCell : UICollectionViewCell {
     let preview: String
   }
   
-  @IBOutlet private weak var activityIndicatorView: UIActivityIndicatorView!
   @IBOutlet private weak var imageView: UIImageView!
   
   var viewModel: ViewModel? {
@@ -28,12 +27,10 @@ class ImagePreviewCell : UICollectionViewCell {
         return imageView.image = nil
       }
       
-//      activityIndicatorView.startAnimating()
-      
       // set the preview image
       imageView.image = ImagePreviewService.sharedInstance.imageFromBody(viewModel.preview)
       
-      // load the actual image from url (1 sec delay)      
+      // load the actual image from url (with a small delay)
       let seconds = 0.5
       let when = dispatch_time(DISPATCH_TIME_NOW, Int64(seconds * Double(NSEC_PER_SEC)))
       dispatch_after(when, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0)) {
@@ -43,8 +40,6 @@ class ImagePreviewCell : UICollectionViewCell {
           guard let data = data, image = UIImage(data: data) else {
             return print("Could not load image from url \(viewModel.url.absoluteString)")
           }
-          
-//          self?.activityIndicatorView.stopAnimating()
           
           let transition = CATransition()
           transition.duration = 0.5
