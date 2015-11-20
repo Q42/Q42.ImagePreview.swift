@@ -2,6 +2,8 @@
 
 This is the client library for rendering the image previews.
 
+See [this blog post](http://q42.com/blog/post/133591843068/the-imagepreview-library-render-previews-with) for more details.
+
 You can find the [.NET server component on Github](https://github.com/Q42/Q42.ImagePreview.swift).
 
 <!-- [![CI Status](http://img.shields.io/travis/Tim van Steenis/ImagePreview.svg?style=flat)](https://travis-ci.org/Tim van Steenis/ImagePreview)
