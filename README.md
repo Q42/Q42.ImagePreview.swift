@@ -26,11 +26,18 @@ pod "ImagePreview"
 
 This library extends UIImage with 2 methods.
 
-      init?(header: NSData, body: NSData)
+      init?(body: NSData)
       
       func blurredImageWithRadius(blurRadius: CGFloat, tintColor: UIColor?, saturationDeltaFactor: CGFloat, maskImage: UIImage? = nil) -> UIImage?
 
 Take a look at the example project how this is being used.
+
+You can override the headers if you write your own server implementation and the headers do not match.
+
+      // version - NSData
+      ImagePreviewSettings.sharedSettings.headers = [
+        1 : NSData(base64EncodedString: "your base64 encoded header", options: [])!
+      ]
 
 ## Author
 
