@@ -28,7 +28,8 @@ class ImagePreviewCell : UICollectionViewCell {
       }
       
       // set the preview image
-      imageView.image = ImagePreviewService.sharedInstance.imageFromBody(viewModel.preview)
+      imageView.image = NSData(base64EncodedString: viewModel.preview, options: [])
+        .flatMap { UIImage(body: $0)?.blurredImageWithRadius(0.4, tintColor: nil, saturationDeltaFactor: 1) }
       
       // load the actual image from url (with a small delay)
       let seconds = 0.5

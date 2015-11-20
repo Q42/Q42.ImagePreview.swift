@@ -7,19 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2B348F141BDE8C1A00FB6C86 /* ImagePreviewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B348F131BDE8C1A00FB6C86 /* ImagePreviewService.swift */; settings = {ASSET_TAGS = (); }; };
 		2BECF75E1BDE38810001B811 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BECF75D1BDE38810001B811 /* AppDelegate.swift */; };
 		2BECF7631BDE38810001B811 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BECF7611BDE38810001B811 /* Main.storyboard */; };
 		2BECF7651BDE38810001B811 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BECF7641BDE38810001B811 /* Assets.xcassets */; };
-		2BECF7891BDE4A2A0001B811 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BECF7861BDE4A2A0001B811 /* CollectionViewController.swift */; settings = {ASSET_TAGS = (); }; };
-		2BECF78A1BDE4A2A0001B811 /* ImagePreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BECF7871BDE4A2A0001B811 /* ImagePreviewCell.swift */; settings = {ASSET_TAGS = (); }; };
-		2BECF78B1BDE4A2A0001B811 /* ImagePreviewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BECF7881BDE4A2A0001B811 /* ImagePreviewCell.xib */; settings = {ASSET_TAGS = (); }; };
-		2BECF78E1BDE4CA00001B811 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BECF78C1BDE4CA00001B811 /* LaunchScreen.xib */; settings = {ASSET_TAGS = (); }; };
+		2BECF7891BDE4A2A0001B811 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BECF7861BDE4A2A0001B811 /* CollectionViewController.swift */; };
+		2BECF78A1BDE4A2A0001B811 /* ImagePreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BECF7871BDE4A2A0001B811 /* ImagePreviewCell.swift */; };
+		2BECF78B1BDE4A2A0001B811 /* ImagePreviewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BECF7881BDE4A2A0001B811 /* ImagePreviewCell.xib */; };
+		2BECF78E1BDE4CA00001B811 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BECF78C1BDE4CA00001B811 /* LaunchScreen.xib */; };
 		D34A4C39AD32F398FB889CF7 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66266EB03AD45662464D306F /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2B348F131BDE8C1A00FB6C86 /* ImagePreviewService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePreviewService.swift; sourceTree = "<group>"; };
 		2BEAF0551BDE6A0800CB5B11 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		2BECF75A1BDE38810001B811 /* ImagePreviewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImagePreviewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BECF75D1BDE38810001B811 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -81,7 +79,6 @@
 				2BECF75D1BDE38810001B811 /* AppDelegate.swift */,
 				2BECF7861BDE4A2A0001B811 /* CollectionViewController.swift */,
 				2BECF7871BDE4A2A0001B811 /* ImagePreviewCell.swift */,
-				2B348F131BDE8C1A00FB6C86 /* ImagePreviewService.swift */,
 				2BECF7641BDE38810001B811 /* Assets.xcassets */,
 				2BECF7881BDE4A2A0001B811 /* ImagePreviewCell.xib */,
 				2BECF78C1BDE4CA00001B811 /* LaunchScreen.xib */,
@@ -223,7 +220,6 @@
 			files = (
 				2BECF78A1BDE4A2A0001B811 /* ImagePreviewCell.swift in Sources */,
 				2BECF7891BDE4A2A0001B811 /* CollectionViewController.swift in Sources */,
-				2B348F141BDE8C1A00FB6C86 /* ImagePreviewService.swift in Sources */,
 				2BECF75E1BDE38810001B811 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
