@@ -14,9 +14,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   var window: UIWindow?
 
-
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
     // Override point for customization after application launch.    
+    
+    // Uncomment this if you want to implement your own headers.
+//    ImagePreviewSettings.sharedSettings.headers = [
+//      1 : NSData(base64EncodedString: "your base64 encoded header", options: [])!
+//    ]
+    
     return true
   }
 
