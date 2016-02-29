@@ -4,7 +4,7 @@ This is the client library for rendering the image previews.
 
 Look at [this blog post](http://q42.com/blog/post/133591843068/imagepreview-library) for more details.
 
-You can find the [.NET server component on Github](https://github.com/Q42/Q42.ImagePreview.swift).
+You can find the [.NET server component on Github](https://github.com/Q42/Q42.ImagePreview.Net).
 
 <!-- [![CI Status](http://img.shields.io/travis/Tim van Steenis/ImagePreview.svg?style=flat)](https://travis-ci.org/Tim van Steenis/ImagePreview)
 [![Version](https://img.shields.io/cocoapods/v/ImagePreview.svg?style=flat)](http://cocoapods.org/pods/ImagePreview)
