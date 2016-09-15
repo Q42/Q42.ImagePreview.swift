@@ -91,13 +91,13 @@ extension UIImage {
       }
       
       UIGraphicsBeginImageContextWithOptions(size, false, screenScale)
-      let effectInContext = UIGraphicsGetCurrentContext()
+      guard let effectInContext = UIGraphicsGetCurrentContext(), image = self.CGImage else { return nil }
       
       CGContextScaleCTM(effectInContext, 1.0, -1.0)
       CGContextTranslateCTM(effectInContext, 0, -size.height)
-      CGContextDrawImage(effectInContext, imageRect, self.CGImage)
+      CGContextDrawImage(effectInContext, imageRect, image)
       
-      var effectInBuffer = createEffectBuffer(effectInContext!)
+      var effectInBuffer = createEffectBuffer(effectInContext)
       
       
       UIGraphicsBeginImageContextWithOptions(size, false, screenScale)
@@ -160,14 +160,14 @@ extension UIImage {
         }
       }
       
-      if !effectImageBuffersAreSwapped {
-        effectImage = UIGraphicsGetImageFromCurrentImageContext()
+      if let newEffectImage = UIGraphicsGetImageFromCurrentImageContext() where !effectImageBuffersAreSwapped {
+        effectImage = newEffectImage
       }
       
       UIGraphicsEndImageContext()
       
-      if effectImageBuffersAreSwapped {
-        effectImage = UIGraphicsGetImageFromCurrentImageContext()
+      if let newEffectImage = UIGraphicsGetImageFromCurrentImageContext() where effectImageBuffersAreSwapped {
+        effectImage = newEffectImage
       }
       
       UIGraphicsEndImageContext()
@@ -175,20 +175,24 @@ extension UIImage {
     
     // Set up output context.
     UIGraphicsBeginImageContextWithOptions(size, false, screenScale)
-    let outputContext = UIGraphicsGetCurrentContext()
+    guard let outputContext = UIGraphicsGetCurrentContext() else { return nil }
     CGContextScaleCTM(outputContext, 1.0, -1.0)
     CGContextTranslateCTM(outputContext, 0, -size.height)
     
     // Draw base image.
-    CGContextDrawImage(outputContext, imageRect, self.CGImage)
+    if let image = self.CGImage {
+      CGContextDrawImage(outputContext, imageRect, image)
+    }
     
     // Draw effect image.
     if hasBlur {
       CGContextSaveGState(outputContext)
-      if let image = maskImage {
-        CGContextClipToMask(outputContext, imageRect, image.CGImage);
+      if let image = maskImage?.CGImage {
+        CGContextClipToMask(outputContext, imageRect, image);
       }
-      CGContextDrawImage(outputContext, imageRect, effectImage.CGImage)
+      if let effectImage = effectImage.CGImage {
+        CGContextDrawImage(outputContext, imageRect, effectImage)
+      }
       CGContextRestoreGState(outputContext)
     }
     

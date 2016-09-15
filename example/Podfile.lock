@@ -1,17 +1,19 @@
 PODS:
-  - Alamofire (2.0.2)
-  - ImagePreview (0.1.0)
+  - Alamofire (3.5.0)
+  - ImagePreview (0.3.0)
 
 DEPENDENCIES:
-  - Alamofire (~> 2.0)
+  - Alamofire (~> 3.5)
   - ImagePreview (from `../`)
 
 EXTERNAL SOURCES:
   ImagePreview:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  Alamofire: 8edbab00802a752bb5240cc2abe70e7e881488ad
-  ImagePreview: f938d249133af154ed7b316a337ea2a9203c0e54
+  Alamofire: b70a7352335f8ea5babd0a923eb7e8eacc67b877
+  ImagePreview: d2b8b4bbb7b572da9a65277248aded10909d9ce6
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: 3ad13c9837d0da65220a6610999057df356fc125
+
+COCOAPODS: 1.0.1
