@@ -1,9 +1,7 @@
-source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'
 use_frameworks!
 
-link_with "ImagePreviewDemo"
-
 pod 'ImagePreview', :path => '../'
-pod 'Alamofire', '~> 2.0'
+pod 'Alamofire'
 
+target 'ImagePreviewDemo'
