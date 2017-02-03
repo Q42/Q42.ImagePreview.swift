@@ -15,6 +15,7 @@ class ImagePreviewCell : UICollectionViewCell {
   
   struct ViewModel {
     let url: URL
+    let size: CGSize
     let preview: String
   }
   
@@ -29,7 +30,7 @@ class ImagePreviewCell : UICollectionViewCell {
       
       // set the preview image
       imageView.image = Data(base64Encoded: viewModel.preview, options: [])
-        .flatMap { UIImage(imagePreview: $0)?.blurred(blurRadius: 0.4, tintColor: nil, saturationDeltaFactor: 1) }
+        .flatMap { UIImage(imagePreview: $0)?.blurred(radius: 0.4, tintColor: nil, saturationDeltaFactor: 1) }
       
       // load the actual image from url (with a small delay)
       DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(500)) {
