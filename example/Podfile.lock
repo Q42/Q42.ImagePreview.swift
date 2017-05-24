@@ -1,6 +1,6 @@
 PODS:
-  - Alamofire (4.2.0)
-  - ImagePreview (0.4.0)
+  - Alamofire (4.4.0)
+  - ImagePreview (0.5.0)
 
 DEPENDENCIES:
   - Alamofire
@@ -11,9 +11,9 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  Alamofire: aa2e09d871c9160ac53c90e83c68064a94e3dfbe
-  ImagePreview: 535b5bb5bfd81b1342877b6db389025f632274e3
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  ImagePreview: 019e57c46d0df7d073206d02e6e910ce8b7a8bf6
 
 PODFILE CHECKSUM: e2db34f51057ca6ff757f6542da6545577323566
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.2.1
