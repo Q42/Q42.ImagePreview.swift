@@ -43,8 +43,8 @@ class ImagePreviewCell : UICollectionViewCell {
 
           let transition = CATransition()
           transition.duration = 0.5
-          transition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
-          transition.type = kCATransitionFade
+          transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+          transition.type = CATransitionType.fade
           transition.isRemovedOnCompletion = true
           self?.imageView.layer.add(transition, forKey: nil)
           self?.imageView.image = image

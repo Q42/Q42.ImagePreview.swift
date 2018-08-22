@@ -77,7 +77,7 @@ extension UIImage {
     var effectImage = self
 
     let hasBlur = blurRadius > CGFloat.ulpOfOne
-    let hasSaturationChange = fabs(saturationDeltaFactor - 1.0) > CGFloat.ulpOfOne
+    let hasSaturationChange = abs(saturationDeltaFactor - 1.0) > CGFloat.ulpOfOne
 
     if hasBlur || hasSaturationChange {
       func createEffectBuffer(_ context: CGContext) -> vImage_Buffer {
