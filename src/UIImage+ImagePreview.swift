@@ -54,7 +54,7 @@ extension UIImage {
 
   public func makeImagePreview() -> (Data, Data)? {
     guard
-      let sourceData = UIImageJPEGRepresentation(self, 0.9),
+      let sourceData = self.jpegData(compressionQuality: 0.9),
       let imageSource = CGImageSourceCreateWithData(sourceData as CFData, nil)
     else { return  nil }
 
@@ -65,7 +65,7 @@ extension UIImage {
 
     guard
       let cgImage = CGImageSourceCreateThumbnailAtIndex(imageSource, 0, options as CFDictionary?),
-      let data = UIImageJPEGRepresentation(UIImage(cgImage: cgImage), 0.4)
+      let data = UIImage(cgImage: cgImage).jpegData(compressionQuality: 0.4)
     else { return  nil }
 
     return data.previewParts
