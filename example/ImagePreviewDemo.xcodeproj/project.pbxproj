@@ -126,18 +126,18 @@
 		2BECF7521BDE38810001B811 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1000;
+				LastUpgradeCheck = 1110;
 				ORGANIZATIONNAME = Q42;
 				TargetAttributes = {
 					2BECF7591BDE38810001B811 = {
 						CreatedOnToolsVersion = 7.0.1;
-						LastSwiftMigration = 1000;
+						LastSwiftMigration = 1110;
 					};
 				};
 			};
 			buildConfigurationList = 2BECF7551BDE38810001B811 /* Build configuration list for PBXProject "ImagePreviewDemo" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -174,7 +174,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ImagePreviewDemo/Pods-ImagePreviewDemo-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-ImagePreviewDemo/Pods-ImagePreviewDemo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/ImagePreview/ImagePreview.framework",
 			);
@@ -185,7 +185,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ImagePreviewDemo/Pods-ImagePreviewDemo-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ImagePreviewDemo/Pods-ImagePreviewDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B148AF156F913042A17529C8 /* [CP] Check Pods Manifest.lock */ = {
@@ -352,7 +352,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.q42.ImagePreviewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -365,7 +365,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.q42.ImagePreviewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

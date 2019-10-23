@@ -1,13 +1,13 @@
 PODS:
-  - Alamofire (4.7.3)
-  - ImagePreview (0.6.0)
+  - Alamofire (4.9.0)
+  - ImagePreview (0.8.0)
 
 DEPENDENCIES:
   - Alamofire
   - ImagePreview (from `../`)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - Alamofire
 
 EXTERNAL SOURCES:
@@ -15,9 +15,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
-  ImagePreview: c73f04f03326b15c1d214c8030805609f4cac271
+  Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
+  ImagePreview: b39ba7b9ca2cee03939c35c95765eb9c07d09f8d
 
 PODFILE CHECKSUM: e2db34f51057ca6ff757f6542da6545577323566
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.8.4

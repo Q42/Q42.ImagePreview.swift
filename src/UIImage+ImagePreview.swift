@@ -82,7 +82,7 @@ private extension Data {
   }
 
   var headerParts: (Data, Data)? {
-    guard let range = self.range(of: Data(bytes: [0xFF, 0xC0])) else { return nil }
+    guard let range = self.range(of: Data([0xFF, 0xC0])) else { return nil }
     let sizeStart = range.lowerBound.advanced(by: 5)
 
     let header1 = self.subdata(in: self.startIndex ..< sizeStart)
@@ -92,8 +92,8 @@ private extension Data {
   }
 
   var previewParts: (Data, Data)? {
-    guard let rangeC0 = self.range(of: Data(bytes: [0xFF, 0xC0])) else { return nil }
-    guard let rangeDA = self.range(of: Data(bytes: [0xFF, 0xDA])) else { return nil }
+    guard let rangeC0 = self.range(of: Data([0xFF, 0xC0])) else { return nil }
+    guard let rangeDA = self.range(of: Data([0xFF, 0xDA])) else { return nil }
 
     let sizeStart = rangeC0.lowerBound.advanced(by: 5)
     let sizeEnd = sizeStart.advanced(by: 4)
@@ -105,7 +105,7 @@ private extension Data {
 
     let size = self.subdata(in: sizeStart ..< sizeEnd)
     let body2 = self.subdata(in: rangeDA.lowerBound ..< self.endIndex)
-    let body = Data(bytes: [0x02]) + size + body2
+    let body = Data([0x02]) + size + body2
 
     return (header, body)
   }
