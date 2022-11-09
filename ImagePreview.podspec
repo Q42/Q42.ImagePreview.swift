@@ -18,6 +18,6 @@ ImagePreview.swift is a Swift client for rendering the ~200 byte preview images 
   s.swift_version = '5.1'
   s.requires_arc  = true
 
-  s.source_files = 'src/*'
+  s.source_files = 'Sources/ImagePreview/*'
 
 end
